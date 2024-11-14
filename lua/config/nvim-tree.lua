@@ -1,3 +1,9 @@
+local status, nvim_tree = pcall(require, "nvim-tree")
+if not status then
+    vim.notify("Not found nvim_tree")
+    return
+end
+
 nvim_tree.setup({
     sort_by = "case_sensitive",
     -- 是否显示 git 状态
