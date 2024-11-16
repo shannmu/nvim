@@ -89,4 +89,7 @@ require("lazy").setup({
         end,
         ft = { "markdown" },
     },
+
+    --- Tagbar: a class outline viewer for VimEnter
+    "preservim/tagbar",
 })
