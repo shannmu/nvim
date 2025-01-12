@@ -71,7 +71,14 @@ require("lazy").setup({
             "sindrets/diffview.nvim",        -- optional - Diff integration
 
             -- Only one of these is needed.
-            "nvim-telescope/telescope.nvim", -- optional
+            {
+                "nvim-telescope/telescope.nvim", -- optional
+                dependencies = {
+                    "nvim-treesitter/nvim-treesitter",
+                    "nvim-lua/plenary.nvim",
+                    "sharkdp/fd"
+                },
+            },
             "ibhagwan/fzf-lua",              -- optional
             "echasnovski/mini.pick",         -- optional
         },
