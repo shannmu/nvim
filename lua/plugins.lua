@@ -99,4 +99,17 @@ require("lazy").setup({
 
     --- Tagbar: a class outline viewer for VimEnter
     "preservim/tagbar",
+
+    --- neofomat: a (neo)vim plugin for formatting code
+    {
+        "sbdchd/neoformat",
+    },
+
+    --- rust.vim: provide Rust file detection, syntax highlighting, formatting and so on
+    {
+        "rust-lang/rust.vim",
+        config = function()
+            require("config.rust-vim")
+        end,
+    },
 })
