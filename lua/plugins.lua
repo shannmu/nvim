@@ -78,6 +78,9 @@ require("lazy").setup({
                     "nvim-lua/plenary.nvim",
                     "sharkdp/fd"
                 },
+                config = function()
+                    require("config.telescope")
+                end,
             },
             "ibhagwan/fzf-lua",              -- optional
             "echasnovski/mini.pick",         -- optional
