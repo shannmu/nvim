@@ -27,4 +27,11 @@ nvim_tree.setup({
     renderer = {
     	group_empty = true,
     },
+
+    --- To fix nvim-tree uses lcd instead of cd, which doesn't trigger the hooks of auto-session
+    actions = {
+        change_dir = {
+            global = true
+        }
+    },
 })
