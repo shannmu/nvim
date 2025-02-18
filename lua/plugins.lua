@@ -151,4 +151,14 @@ require("lazy").setup({
             require("config.auto-session")
         end,
     },
+
+    {
+        
+        'akinsho/toggleterm.nvim',
+        version = "*",
+        config = function()
+            require("config.toggleterm")
+        end,
+        
+    },
 })
